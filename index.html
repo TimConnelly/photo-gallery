@@ -2,7 +2,7 @@
 
 <html>
   <head>
-    <meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
 
@@ -12,52 +12,59 @@
   </head>
   <body>
 
-    <h1>Tim Connelly's Photos</h1>
-
-    <div id="my_nanogallery2" data-nanogallery2 = '{ 
-        "itemsBaseURL": "photos/",
+    <h2>Landscape</h2>
+    <div ID="landscape" data-nanogallery2='{
+        "flickrAPIKey": "50569136bcf27bd7075a85112a21c95b",
+        "userID": "9061122@N03",
+        "kind": "flickr",
         "thumbnailWidth": "auto",
         "thumbnailHeight": "200",
         "thumbnailLabel": {
-          "position": "overImageOnBottom"
+            "display": "false"
         },
+        "albumList2": "Landscape",
+
         "thumbnailAlignment": "center",
         "thumbnailOpenImage": true
-    }' >
-        <!-- FIRST ALBUM -->
-        <a href="" data-ngkind="album" data-ngid="1" data-ngthumb="landscape/4-DSC07443.jpg" >Landscape</a>
-        <a href="landscape/10-_DSC8857.jpg" data-ngalbumid="1" data-ngthumb="landscape/10-_DSC8857.jpg"></a>
-        <a href="landscape/11-StarStaX_sixshootermoon-001-sixshootermoon-180_lighten.jpg" data-ngalbumid="1" data-ngthumb="landscape/11-StarStaX_sixshootermoon-001-sixshootermoon-180_lighten.jpg"></a>
-        <a href="landscape/12-DSC09468.jpg" data-ngalbumid="1" data-ngthumb="landscape/12-DSC09468.jpg"></a>
-        <a href="landscape/13-_DSC0471.jpg" data-ngalbumid="1" data-ngthumb="landscape/13-_DSC0471.jpg"></a>
-        <a href="landscape/14-_DSC9739.jpg" data-ngalbumid="1" data-ngthumb="landscape/14-_DSC9739.jpg"></a>
-        <a href="landscape/1-51239111594_58c1efb187_o.jpg" data-ngalbumid="1" data-ngthumb="landscape/1-51239111594_58c1efb187_o.jpg"></a>
-        <a href="landscape/15-_DSC9914-Pano-Edit.jpg" data-ngalbumid="1" data-ngthumb="landscape/15-_DSC9914-Pano-Edit.jpg"></a>
-        <a href="landscape/16-_DSC0064.jpg" data-ngalbumid="1" data-ngthumb="landscape/16-_DSC0064.jpg"></a>
-        <a href="landscape/17-_DSC0142.jpg" data-ngalbumid="1" data-ngthumb="landscape/17-_DSC0142.jpg"></a>
-        <a href="landscape/2-DSC07186.jpg" data-ngalbumid="1" data-ngthumb="landscape/2-DSC07186.jpg"></a>
-        <a href="landscape/3-DSC07224.jpg" data-ngalbumid="1" data-ngthumb="landscape/3-DSC07224.jpg"></a>
-        <a href="landscape/4-DSC07443.jpg" data-ngalbumid="1" data-ngthumb="landscape/4-DSC07443.jpg"></a>
-        <a href="landscape/5-IMG_5719.jpg" data-ngalbumid="1" data-ngthumb="landscape/5-IMG_5719.jpg"></a>
-        <a href="landscape/6-DSC08848.jpg" data-ngalbumid="1" data-ngthumb="landscape/6-DSC08848.jpg"></a>
-        <a href="landscape/7-DSC08953.jpg" data-ngalbumid="1" data-ngthumb="landscape/7-DSC08953.jpg"></a>
-        <a href="landscape/8-DSC01207.jpg" data-ngalbumid="1" data-ngthumb="landscape/8-DSC01207.jpg"></a>
-        <a href="landscape/9-DSC01388.jpg" data-ngalbumid="1" data-ngthumb="landscape/9-DSC01388.jpg"></a>
+      }'>
 
-      
-        <!-- SECOND ALBUM -->
-        <a href="" data-ngkind="album" data-ngid="2" data-ngthumb="adventure/3-DSC00329.jpg" >Adventure</a>
-        <a href="adventure/1-DSC09305.jpg" data-ngalbumid="2" data-ngthumb="adventure/1-DSC09305.jpg"></a>
-        <a href="adventure/2-DSC00300.jpg" data-ngalbumid="2" data-ngthumb="adventure/2-DSC00300.jpg"></a>
-        <a href="adventure/3-DSC00329.jpg" data-ngalbumid="2" data-ngthumb="adventure/3-DSC00329.jpg"></a>
-        <a href="adventure/4-DSC01031.jpg" data-ngalbumid="2" data-ngthumb="adventure/4-DSC01031.jpg"></a>
-        <a href="adventure/5-DSC09279.jpg" data-ngalbumid="2" data-ngthumb="adventure/5-DSC09279.jpg"></a>
-        <a href="adventure/6-_DSC9986.jpg" data-ngalbumid="2" data-ngthumb="adventure/6-_DSC9986.jpg"></a>
-        <a href="adventure/7-_DSC0752.jpg" data-ngalbumid="2" data-ngthumb="adventure/7-_DSC0752.jpg"></a>
-        <a href="adventure/8-_DSC1173.jpg" data-ngalbumid="2" data-ngthumb="adventure/8-_DSC1173.jpg"></a>
-        <a href="adventure/9-_DSC1909.jpg" data-ngalbumid="2" data-ngthumb="adventure/9-_DSC1909.jpg"></a>
-      </div>    
-    
+    </div>
+
+    <h2>Adventure</h2>
+    <div ID="adventure" data-nanogallery2='{
+        "flickrAPIKey": "50569136bcf27bd7075a85112a21c95b",
+        "userID": "9061122@N03",
+        "kind": "flickr",
+        "thumbnailWidth": "auto",
+        "thumbnailHeight": "200",
+        "thumbnailLabel": {
+            "display": "false"
+        },
+        "albumList2": "Adventure",
+
+        "thumbnailAlignment": "center",
+        "thumbnailOpenImage": true
+      }'>
+
+    </div>
+
+    <h2>Personal Favorites</h2>
+    <div ID="favorites" data-nanogallery2='{
+        "flickrAPIKey": "50569136bcf27bd7075a85112a21c95b",
+        "userID": "9061122@N03",
+        "kind": "flickr",
+        "thumbnailWidth": "auto",
+        "thumbnailHeight": "200",
+        "thumbnailLabel": {
+            "display": "false"
+        },
+        "albumList2": "Favorites",
+
+        "thumbnailAlignment": "center",
+        "thumbnailOpenImage": true
+      }'>
+
+    </div>
   </body>
 </html>
 

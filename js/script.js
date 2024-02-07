@@ -31,6 +31,25 @@ function myTnTool( action, item ) {
     }
 }
 
+function lbCartClick(customElementName, $customIcon, item) {
+    console.log("customElementName");
+    console.log("item");
+    
+    switch( customElementName ) {
+      case 'custom1':
+        // switch favorite status
+        console.log(item);
+        item.customData.favorite=!item.customData.favorite;
+        TnSetFavorite(item);
+        buyURL = "https://www.pictorem.com/order.html?apiid=OT2PKT2INR&import=" + item.src
+
+        console.log(buyURL)
+        window.open(buyURL, "mozillaTab");
+
+        break;
+    }
+}
+
 // Add custom elements after one thumbnail is build
 function myTnInit( $e, item, GOMidx ) {
     // var st='position:absolute;top:45%;left:10px;padding:10px;'

@@ -7,6 +7,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
+    <script src="js/script.js"></script>  
 
   </head>
   <body>
@@ -40,11 +41,16 @@
         "displayBreadcrumb": false,
         "thumbnailAlignment": "center",
         "thumbnailOpenImage": true,
-        "thumbnailToolbarImage": {"topLeft": "", "topRight": "download"},
+        "fnThumbnailInit": "myTnInit",
+        "fnThumbnailToolCustAction": "myTnTool",
+        "icons": { 
+            "thumbnailCustomTool1" : "<i style=&#39;color:#eeeeee;&#39; class=&#39;nGY2Icon-basket&#39;></i>",
+            "viewerCustomTool1" : "<i style=&#39;color:#eeeeee;&#39; class=&#39;nGY2Icon-basket&#39;></i>"
+        },
+        "fnImgToolbarCustClick": "lbCartClick",
         "viewerTools": {
-            "topRight": "downloadButton, fullscreenButton, closeButton"
+            "topRight": "custom1, fullscreenButton, closeButton"
         }
-        
     }'>
 </div>
 </body>
